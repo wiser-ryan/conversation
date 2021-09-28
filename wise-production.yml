@@ -1,0 +1,15 @@
+# To deploy the production app run
+# - yarn build-cli
+# - ./wise deploy -c ./wise-production.yml --protocol https --tag v1
+AWS:
+  S3:
+    Bucket: wiseassistant-conversations
+  CloudFront:
+    DistributionId: E1XWRE69U0O1NZ
+
+Project:
+  SlackChannel: '#frontend'
+  BuildOutput: ./build
+  Hostname: conversations-wise.gogetwise.com
+
+Environment:

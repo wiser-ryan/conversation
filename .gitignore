@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Ignore NPM stuff, we're using Yarn for package management.
+package-lock.json
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/wise
+/build
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+*debug.log*
+yarn-error.log*
+.vscode/settings.json
+
+.idea
+
+
+# cypress
+cypress/videos
+cypress/screenshots
+.nyc_output
+
+# vscode
+*.code-workspace
+.eslintcache
